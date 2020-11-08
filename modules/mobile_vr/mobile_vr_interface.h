@@ -64,6 +64,7 @@ private:
 	//@TODO not yet used, these are needed in our distortion shader...
 	real_t k1;
 	real_t k2;
+	real_t dihedral;
 
 	/*
 		logic for processing our sensor data, this was originally in our positional tracker logic but I think
@@ -127,6 +128,9 @@ public:
 
 	void set_k2(const real_t p_k2);
 	real_t get_k2() const;
+
+	void set_dihedral(const real_t p_dihedral);
+	real_t get_dihedral() const;
 
 	virtual StringName get_name() const;
 	virtual int get_capabilities() const;
